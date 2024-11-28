@@ -1,0 +1,17 @@
+
+.main-heading{
+    color:aqua;
+    font-family:"roboto";
+    font-size:40px;
+    font-style:italic;
+    font-weight: bolder;
+    text-decoration:underline ;
+}
+.para{
+    color:goldenrod;
+}
+.card{
+    background-color: rgb(209, 136, 27);
+    text-align: center;
+    
+}
