@@ -1,0 +1,36 @@
+.bg-container{
+    background-image: url(" https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/todolistbg.png");
+    height:90vh;
+    background-size:cover
+}
+
+.card{
+    font-family:"roboto";
+    padding:10px;
+    color:white;
+    text-align:center;
+}
+.h2-heading{
+    text-align:left;
+    color:white;
+    padding:5px;
+    font-family:"roboto";
+}
+.button{
+    color:white;
+    background-color:orange;
+    padding:10px;
+    font-family:"roboto";
+    height:36px;
+    width:136px;
+    justify-content: center;
+    
+}
+.h6-heading{
+    text-align:center;
+    color:white;
+    text-decoration:underline;
+    padding:10px;
+    font-family:"roboto";
+
+}
