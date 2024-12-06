@@ -12,26 +12,15 @@
 }
 .bg-container{
     background-image: url("https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-ocean-with-white-cloud-blue-sky-copyspace_74190-8663.jpg?t=st=1732949219~exp=1732952819~hmac=d5a50c7013501d3f9eb310c673cef330fbb2f8b2dd301240ae56af00ecdc15ca&w=996");
- 
-    height: 90vh;
-
-    background-size: cover;
+     height: 90vh;
+     background-size: cover;
 }
-.card{
+.tourism-card{
     background-color:whitesmoke;
     text-align: center;
     border-top-right-radius:20px;
     border-top-left-radius: 20px;;
     padding: 10px;
     
-
-}
-.button{
-    height:36px;
-    width:136px;
-    background-color: #25b1cc;
-    color:whitesmoke;
-    border-radius: 20px;
-    border-width:0px;
 
 }
