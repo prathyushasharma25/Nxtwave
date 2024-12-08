@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: none; /* Initially hide all sections */
+            padding: 20px;
+        }
+
+        section.active {
+            display: block; /* Show only the active section */
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .card {
+            margin: 10px 0;
+        }
+
+        .carousel img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1: Tourism Section -->
+    <section id="page1" class="active">
+        <div>
+            <h1 class="main-heading">Tourism</h1>
+            <p>Plan where you want to go</p>
+            <button class="btn btn-primary" onclick="showPage('page2')">Start</button>
+        </div>
+    </section>
+
+    <!-- Page 2: Favorite Places Section -->
+    <section id="page2">
+        <h1>Favorite Places</h1>
+        <div class="card">
+            <h2>Taj Mahal</h2>
+            <p>If there was just one symbol to represent all of India, it would be the Taj Mahal.</p>
+            <button class="btn btn-primary" onclick="showPage('page3')">View Details</button>
+        </div>
+        <div class="card">
+            <h2>Golden Temple</h2>
+            <p>Amritsar is world-famous for the beautiful and highly revered Golden Temple.</p>
+        </div>
+        <button class="btn btn-secondary" onclick="showPage('page1')">Back</button>
+    </section>
+
+    <!-- Page 3: Detailed View Section -->
+    <section id="page3">
+        <h1>Detailed View</h1>
+        <div class="carousel">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" alt="Taj Mahal Image 1">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" alt="Taj Mahal Image 2">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" alt="Taj Mahal Image 3">
+        </div>
+        <p>The Taj Mahal is considered to be the greatest architectural achievement in Indo-Islamic architecture.</p>
+        <button class="btn btn-secondary" onclick="showPage('page2')">Back</button>
+    </section>
+
+    <script>
+        // Function to show the requested page and hide others
+        function showPage(pageId) {
+            // Get all sections
+            const sections = document.querySelectorAll('section');
+            
+            // Hide all sections
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show the requested section
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
