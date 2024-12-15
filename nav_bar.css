@@ -1,0 +1,67 @@
+.navbar-img{
+    height:40px;
+    width:80px;
+    padding:5px;
+}
+.bg-color{
+    background-color: yellow;
+}
+.navbar{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding:0.5rem 1rem ;
+}
+.navbar-expand-lg{
+    flex-diextion:row;
+
+
+}
+.navbar-light{
+    color:#343a40;
+}
+.bg-info{
+    font-size:1.25rem;
+    padding:0.1325 0;
+
+}
+.navbar-toggler{
+ border:1px solid transparent;
+ padding:1.25rem 0.75rem;
+
+}
+.navbar-toggler-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg");
+    background-size: contain; /* Ensures the image fits within the container */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  width: 30px; /* Sets width of the icon */
+  height: 30px; /* Sets height of the icon */
+  display: inline-block; /* Ensures it behaves like a block-level element */
+
+}
+.collapse{
+    display:none;
+    transition: height 0.35s ease;
+}
+.navbar-collapse{
+
+}
+.navbar-nav{
+    display:flex;
+    flrx-direction:row;
+    margin-left:auto;
+}
+.nav-link{
+padding:0.4rem 1rem;
+color:rgba(0,0,0,5);
+text-decoration:none;
+}
+.active{
+    color:rgba(0,0,0,0.9);
+}
+.sr-only{
+    position:absolute;
+    width:1px; 
+    height:1px;
+    overflow:hidden;
+}
